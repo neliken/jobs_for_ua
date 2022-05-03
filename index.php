@@ -33,60 +33,48 @@ include "conn.php";
             <input type="text" placeholder="Search for jobs .." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
+        <div class="search-box">
+          <input type="text" autocomplete="off" placeholder="Search country..." />
+          <div class="result"></div>
+        </div>
         <br><br>
         </center>
         <div class="">
+          <center>
+          <table>
+            <tr>
+                <th>Position</th>
+                <th>Job description</th>
+                <th>Location</th>
+                <th>Employer</th>
+                <th>Send CVffffff</th>
+            </tr>
           <?php
-$sql="Select * from job";
-$result = mysqli_query($link, $sql);
-if($result){
-while ($row =mysqli_fetch_assoc($result)) {
-  $name=$row['name'];
-  $description=$row['description'];
-  $category=$row['category'];
-  $company =$row['company'];
+        $sql="Select * from job";
+        $result = mysqli_query($link, $sql);
+        if($result){
+        while ($row =mysqli_fetch_assoc($result)) {
+          $name=$row['name'];
+          $description=$row['description'];
+          $category=$row['category'];
+          $company =$row['company'];
 
     echo '
-  <
+        <tr>
+            <td>'.$name.'</td>
+            <td>'.$description.'</td>
+            <td>'.$category.'</td>
+            <td>'.$company.'</td>
+            <td><button>Send CV</button></td>
+        </tr>
     ';
   }
 }
 
  ?>
+ </table>
+ </center>
         </div>
-        <center>
-            <table>
-                <tr>
-                    <th>Position</th>
-                    <th>Job description</th>
-                    <th>Location</th>
-                    <th>Employer</th>
-                    <th>Send CVffffff</th>
-                </tr>
-                <tr>
-                    <td><a href="https://rabota.md" target="_blank">QA Engineer</a></td>
-                    <td>Quality Assurance</td>
-                    <td>Chisinau</td>vrfvd
-                    <td>Allied Testing</td>
-                    <td><button>Send CV</button></td>
-                </tr>
-                <tr>
-                    <td><a href="https://ixobit.md" target="_blank">Programator</a></td>
-                    <td>Programe soft limbaj C</td>
-                    <td>Chisinau</td>
-                    <td>IXOBIT LTD</td>
-                    <td><button>Send CV</button></td>
-                </tr>
-                <tr>
-                    <td><a href="https://primdent.md" target="_blank">Dentist</a></td>
-                    <td>Stomatolog</td>
-                    <td>Balti</td>
-                    <td>Smile Dent</td>
-                    <td><button>Send CV</button></td>
-                </tr>
-
-            </table>
-    </center>
     </body>
 
 </html>
