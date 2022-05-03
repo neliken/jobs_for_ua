@@ -61,7 +61,7 @@ while ($row =mysqli_fetch_assoc($result)) {
                     <th>Job description</th>
                     <th>Location</th>
                     <th>Employer</th>
-                    <th>Send CV</th>
+                    <th>Send CVffffff</th>
                 </tr>
                 <tr>
                     <td><a href="https://rabota.md" target="_blank">QA Engineer</a></td>
