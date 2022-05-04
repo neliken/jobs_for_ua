@@ -105,3 +105,17 @@ tr:nth-child(even) {
 .btn-group .button1:hover {
  background-color: #3e8e41;
 }
+
+.error_message {
+    color: red;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success_message {
+    color: green;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
