@@ -48,10 +48,10 @@ include "db_connection.php";
                 <th>Job description</th>
                 <th>Location</th>
                 <th>Employer</th>
-                <th>Send CVffffff</th>
+                <th>Send CV</th>
             </tr>
           <?php
-        $sql="Select * from job";
+        $sql="Select * from jobs";
         $result = mysqli_query($db_connection, $sql);
         if($result){
         while ($row =mysqli_fetch_assoc($result)) {
@@ -71,7 +71,6 @@ include "db_connection.php";
     ';
   }
 }
-
  ?>
  </table>
  </center>
