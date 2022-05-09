@@ -34,8 +34,8 @@ exit;
           echo '<div class="error_message">'.$error_message.'</div>';
           }
           ?>
-          <input type="email" name="user_email" id="email" placeholder="Email" required>
-          <input type="password" name="user_password" id="password" placeholder="Password" required>
+          <input type="email" name="user_email" id="email" placeholder="Email" required autocomplete="off">
+          <input type="password" name="user_password" id="password" placeholder="Password" required autocomplete="off">
 
           <div class="container" style="background-color:#f1f1f1">
           <a href="home.php"><button type="submit" class="button">Login</button></a>

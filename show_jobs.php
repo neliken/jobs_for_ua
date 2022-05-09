@@ -47,7 +47,7 @@ if(isset($_GET['deleteid'])){
       <div class="navbar">
         <a class="active" href="home.php"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="show_jobs.php"><i>Show Jobs</i></a>
-        <a href="show_jobs.php"><i>Add a job</i></a>
+        <a href="add_job.php"><i>Add a job</i></a>
         <a href="logout.php" style="float:right"><i class="fa fa-fw fa-user"></i>Logout</a>
       </div>
 
@@ -86,7 +86,7 @@ if(isset($_GET['deleteid'])){
             <td>'.$description.'</td>
             <td>'.$category.'</td>
             <td>'.$company.'</td>
-            <td><button>Edit</button></td>
+            <td><button><a href="update_job.php?updateid='.$id.'">Edit</a></button></td>
             <td><button><a href="show_jobs.php?deleteid='.$id.'">Delete</a></button></td>
         </tr>
     ';

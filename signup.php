@@ -36,9 +36,9 @@ exit;
         }
         ?>
 
-      <input type="text" name="username" id="username" placeholder="Name Surname" required value="">
-      <input type="email" name="user_email" id="email" placeholder="Email" required>
-      <input type="password" name="user_password" placeholder="Password" required>
+      <input type="text" name="username" id="username" placeholder="Name Surname" required autocomplete="off">
+      <input type="email" name="user_email" id="email" placeholder="Email" required autocomplete="off">
+      <input type="password" name="user_password" placeholder="Password" required autocomplete="off">
 
       <button type="reset" class="button">Reset</button>
       <button type="submit" class="button">Sign Up</button>
