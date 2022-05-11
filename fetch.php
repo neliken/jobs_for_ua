@@ -15,7 +15,6 @@ if(isset($_POST["query"]))
  SELECT * FROM jobs
  WHERE name REGEXP '".$search."'
  OR description REGEXP '".$search."'
- OR category REGEXP '".$search."'
  OR company REGEXP '".$search."'
  ";
 }

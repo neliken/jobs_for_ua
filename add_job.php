@@ -20,7 +20,7 @@ if(isset($_POST['insert']))
         $category = mysqli_real_escape_string($db_connection,$_POST['category']);
         $company = mysqli_real_escape_string($db_connection,$_POST['company']);
 
-        $sql_insert = "INSERT INTO `jobs` (`name`,`description`, `category`, `company`, `id_user`)
+        $sql_insert = "INSERT INTO `jobs` (`name`,`description`, `photo`, `company`, `id_user`)
             VALUES ('$name', '$description', '$category', '$company', '$id')";
 
           if(mysqli_query($db_connection,$sql_insert))
@@ -31,41 +31,129 @@ if(isset($_POST['insert']))
         }
     }
  ?>
-<html lang="ro">
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="jobs">
-    <meta name="author" content="IXOBIT LTD">
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-     <title>Jobs portal</title>
+<!-- Additional CSS Files -->
+<link rel="stylesheet" href="assets/css/fontawesome.css">
+<link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
+<link rel="stylesheet" href="assets/css/animated.css">
+<link rel="stylesheet" href="assets/css/owl.css">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="style.css">
- </head>
- <body>
+</head>
+<body>
+<!-- ***** Preloader Start ***** -->
+<div id="js-preloader" class="js-preloader">
+<div class="preloader-inner">
+<span class="dot"></span>
+<div class="dots">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+</div>
+<!-- ***** Preloader End ***** -->
 
-   <div class="navbar">
-     <a class="active" href="home.php"><i class="fa fa-fw fa-home"></i> Home</a>
-     <a href="show_jobs.php"><i>Show Jobs</i></a>
-     <a href="add_job.php"><i>Add a job</i></a>
-     <a href="logout.php" style="float:right"><i class="fa fa-fw fa-user"></i>Logout</a>
-   </div>
-<br>
-   <center>
-       <div class="formular">
-         <h1>Add a Job</h1>
-         <form method="post">
-           <input type="text" name="name" placeholder="Job name" required autocomplete="off">
-           <input type="text" name="description" placeholder="Description" required autocomplete="off">
-           <input type="text" name="category" placeholder="Category" required autocomplete="off">
-           <input type="text" name="company" placeholder="Company" required autocomplete="off">
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+<div class="container">
+<div class="row">
+  <div class="col-12">
+    <nav class="main-nav">
+      <!-- ***** Logo Start ***** -->
+      <a href="home.php" class="logo">
+        <img src="assets/images/logo12.png" alt="">
+      </a>
+      <!-- ***** Logo End ***** -->
+      <!-- ***** Menu Start ***** -->
+      <ul class="nav">
+        <li class="scroll-to-section"><a href="home.php" class="active">Home</a></li>
+        <li class="scroll-to-section"><a href="show_jobs.php">Show Jobs</a></li>
+        <li class="scroll-to-section"><a href="add_job.php">Add a Job</a></li>
+        <li class="scroll-to-section"><div class="border-first-button"><a href="logout.php">Logout</a></div></li>
+      </ul>
+      <a class='menu-trigger'>
+          <span>Menu</span>
+      </a>
+      <!-- ***** Menu End ***** -->
+    </nav>
+  </div>
+</div>
+</div>
+</header>
 
-           <input type="submit" class="button" name="insert" value="Insert">
-           <input type="reset" class="button" value="Reset">
-         </form>
-       </div>
-  </center>
- </body>
+<div id="contact" class="contact-us section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+        <form id="contact" action="" method="post">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="contact-dec">
+                <img src="assets/images/contact-dec-v3.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="fill-form">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h4>Add a Job</h4>
+                    <fieldset>
+                      <input type="text" name="name" placeholder="Job Name" autocomplete="on" required>
+                    </fieldset>
+                    <fieldset>
+                      <input type="text" name="description" placeholder="Description" required>
+                    </fieldset>
+                    <fieldset>
+                      <input type="file" name="category" placeholder="Category" required>
+                    </fieldset>
+                    <fieldset>
+                      <input type="text" name="company" placeholder="Company" autocomplete="off">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <button type="reset" name="insert" class="main-button ">Reset</button>
+                      <!-- <button type="submit" name="insert" class="main-button ">Insert</button> -->
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <!-- <button type="reset" name="insert" class="main-button ">Reset</button> -->
+                      <button type="submit" name="insert" class="main-button ">Insert</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 align-self-center">
+              <div >
+                <img src="assets/images/services-image.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
 </html>

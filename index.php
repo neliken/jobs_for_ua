@@ -49,18 +49,16 @@ exit;
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
           <a href="index1.php" class="logo">
-            <img src="assets/images/logo-v3.png" alt="">
+            <img src="assets/images/logo12.png" alt="">
           </a>
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
             <li class="scroll-to-section"><a href="index1.php" class="active">Home</a></li>
             <li class="scroll-to-section"><a href="#about">About</a></li>
-            <li class="scroll-to-section"><a href="#services">Services</a></li>
-            <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
-            <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+            <li class="scroll-to-section"><a href="#services">Jobs</a></li>
             <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-            <li class="scroll-to-section"><div class="border-first-button"><a href="signup.php">Register</a></div></li>
+            <li class="scroll-to-section"><div class="border-first-button"><a href="index.php">Log In</a></div></li>
           </ul>
           <a class='menu-trigger'>
               <span>Menu</span>
@@ -109,7 +107,7 @@ exit;
                         <button type="reset" id="form-submit" class="main-button ">Reset</button>
                       </fieldset> -->
                       <fieldset>
-                      <a href="home.php"><button type="submit" id="form-submit" class="main-button ">Login</button></a>
+                      <a href="home.php"><button type="submit" id="form-submit" class="main-button">Login</button></a>
                       </fieldset>
                       <br>
                       <p>Don't have an account? <a href="signup.php">Sign up now</a></p>

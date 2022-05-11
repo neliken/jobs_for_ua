@@ -26,15 +26,7 @@ include "db_connection.php";
     <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-  <!--
-
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
--->
   </head>
-
 <body>
 
   <!-- ***** Preloader Start ***** -->
@@ -51,26 +43,26 @@ https://templatemo.com/tm-568-digimedia
   <!-- ***** Preloader End ***** -->
 
   <!-- Pre-header Starts -->
-  <div class="pre-header">
-    <div class="container">
+  <!-- <div class="pre-header"> -->
+    <!-- <div class="container"> -->
       <div class="row">
-        <div class="col-lg-8 col-sm-8 col-7">
-          <ul class="info">
-            <li><a href="#"><i class="fa fa-envelope"></i>digimedia@company.com</a></li>
-            <li><a href="#"><i class="fa fa-phone"></i>010-020-0340</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-sm-4 col-5">
-          <ul class="social-media">
+        <!-- <div class="col-lg-8 col-sm-8 col-7"> -->
+          <!-- <ul class="info">
+            <li><a href="#"><i class="fa fa-envelope"></i>nelicacechina@company.com</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>079536530</a></li>
+          </ul> -->
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-sm-4 col-5"> -->
+          <!-- <ul class="social-media">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-behance"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
-        </div>
+          </ul> -->
+        <!-- </div> -->
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
   <!-- Pre-header End -->
 
   <!-- ***** Header Area Start ***** -->
@@ -81,16 +73,14 @@ https://templatemo.com/tm-568-digimedia
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-              <img src="assets/images/logo13.png" alt="">
+              <img src="assets/images/logo12.png" alt="">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="index1.php" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#about">About</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+              <li class="scroll-to-section"><a href="#services">Jobs</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact</a></li>
               <li class="scroll-to-section"><div class="border-first-button"><a href="index.php">Log In</a></div></li>
             </ul>
@@ -105,100 +95,56 @@ https://templatemo.com/tm-568-digimedia
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div id="free-quote" class="free-quote">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Get Your Free Quote</h6>
-            <h4>Grow With Us Now</h4>
-            <div class="line-dec"></div>
-          </div>
+<div id="free-quote" class="free-quote">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 offset-lg-4">
+        <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+          <h6>Get Your Free Quote</h6>
+          <h4>Grow With Us Now</h4>
+          <div class="line-dec"></div>
         </div>
-        <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-          <form id="search" action="#" method="GET">
-            <div class="row">
-              <div class="col-lg-8 col-sm-8">
-                <fieldset>
-                  <input type="text" id="tags" name="text" class="website" placeholder="Enter the Job here ..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <fieldset>
-                  <button type="submit" class="main-button" id="search">Find the Job Now</button>
-                </fieldset>
-              </div>
+      </div>
+      <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+        <form id="search" action="#" method="GET">
+          <div class="row">
+            <div class="col-lg-8 col-sm-8">
+              <fieldset>
+                <input type="text" id="tags" name="text" class="website" placeholder="Enter the Job here ..." autocomplete="on" required>
+              </fieldset>
             </div>
-          </form>
-        </div>
+            <div class="col-lg-4 col-sm-4">
+              <fieldset>
+                <button type="submit" class="main-button" id="search">Find the Job Now</button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- <div class="table-responsive">
-   <div align="right">
-    <p><b>Total Records - <span id="total_records"></span></b></p>
-   </div>
-   <table class="table table-bordered table-striped">
-    <thead>
-     <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Category</th>
-      <th>Company</th>
-      <th>Send CV</th>
-     </tr>
-    </thead>
-    <tbody>
-    </tbody>
-   </table>
-  </div> -->
-
-  <div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Our Portofolio</h6>
-            <h4>See Available <em>Jobs</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="loop owl-carousel">
-
-                  <!-- <h4>Website Builder</h4>
-                  <span>Marketing</span> -->
+<div id="blog" class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="blog-posts">
+          <div class="row" id="123">
 
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2022 DigiMedia Co., Ltd. All Rights Reserved.
-          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-
-
+</div>
   <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>
@@ -224,14 +170,17 @@ $(document).ready(function(){
      for(var count = 0; count < data.length; count++)
      {
 
-      html += '<div class="item">';
-      html += '<div class="portfolio-item">';
-      html += '<div class="down-content">';
+      html += '<div class="col-lg-12">';
+      html += '<div class="post-item">';
+      html += '<div class="right-content">';
+      html += '<div class="thumb">';
+      html += '<a href="#"><img src="assets/images/'+data[count].photo+'" alt=""></a>';
+      html += '</div>';
 
-      html += '<h3>'+data[count].name+'</h3>';
+      html += '<br><span class="category">'+data[count].name+'</span> <br><br>';
+      html += '<h6><em>'+data[count].company+'</em></h6> <br>';
+      // html += '<span>'+data[count].category+'</span> <br>';
       html += '<span>'+data[count].description+'</span> <br>';
-      html += '<span>'+data[count].category+'</span> <br>';
-      html += '<span>'+data[count].company+'</span> <br>';
       // html += '<td><button>Send CV</button></td>';
       html += '   </div>';
       html += '   </div>';
@@ -243,7 +192,7 @@ $(document).ready(function(){
     {
      html = '<tr><td colspan="5">No Data Found</td></tr>';
     }
-    $('div.loop').html(html);
+    $('#123').html(html);
    }
   })
  }

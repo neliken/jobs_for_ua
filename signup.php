@@ -49,7 +49,7 @@ exit;
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
           <a href="index1.php" class="logo">
-            <img src="assets/images/logo-v3.png" alt="">
+            <img src="assets/images/logo12.png" alt="">
           </a>
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
