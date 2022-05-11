@@ -1,7 +1,5 @@
 <?php
 
-//fetch.php
-
 $connect = new PDO("mysql:host=localhost;dbname=jobs_for_ua", "root", "");
 
 $output = '';

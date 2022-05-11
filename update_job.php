@@ -34,7 +34,7 @@ if(isset($_POST['update']))
 
           if(mysqli_query($db_connection,$sql))
         {
-            header('location:show_jobs.php');
+            header('location:show_jobs_admin.php');
         }else{
             die(mysqli_error($db_connection));
         }
@@ -48,11 +48,11 @@ if(isset($_POST['update']))
     <meta name="author" content="IXOBIT LTD">
 
 
-     <title>Jobs portal</title>
+     <title>Update Jobs</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+     <link rel="icon" href="assets/images/logo.png">
      <!-- Bootstrap core CSS -->
      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -80,8 +80,8 @@ if(isset($_POST['update']))
    <!-- ***** Preloader End ***** -->
 
    <!-- ***** Header Area Start ***** -->
-   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-   <div class="container">
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+ <div class="container">
    <div class="row">
      <div class="col-12">
        <nav class="main-nav">
@@ -104,70 +104,70 @@ if(isset($_POST['update']))
        </nav>
      </div>
    </div>
-   </div>
-   </header>
+ </div>
+</header>
 
 
-   <div id="contact" class="contact-us section">
-     <div class="container">
-       <div class="row">
-         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-           <form id="contact" action="" method="post">
-             <div class="row">
-               <div class="col-lg-12">
-                 <div class="contact-dec">
-                   <img src="assets/images/contact-dec-v3.png" alt="">
+<div id="contact" class="contact-us section">
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+       <form id="contact" action="" method="post">
+         <div class="row">
+           <div class="col-lg-12">
+             <div class="contact-dec">
+               <img src="assets/images/contact-dec-v3.png" alt="">
+             </div>
+           </div>
+           <div class="col-lg-7">
+             <div class="fill-form">
+               <div class="row">
+                 <div class="col-lg-12">
+                   <h4>Update <?php echo $name; ?> Job</h4>
+                   <fieldset>
+                     <input type="text" name="name" placeholder="Job Name"  value="<?php echo $name; ?>" autocomplete="on" required>
+                   </fieldset>
+                   <fieldset>
+                     <input type="text" name="description" placeholder="Description"  value="<?php echo $description; ?>" required>
+                   </fieldset>
+                   <fieldset>
+                     <input type="file" name="category" placeholder="Category" value="<?php echo $category; ?>" required>
+                   </fieldset>
+                   <fieldset>
+                     <input type="text" name="company" placeholder="Company"  value="<?php echo $company; ?>"  autocomplete="off">
+                   </fieldset>
                  </div>
-               </div>
-               <div class="col-lg-7">
-                 <div class="fill-form">
-                   <div class="row">
-                     <div class="col-lg-12">
-                       <h4>Update <?php echo $name; ?> Job</h4>
-                       <fieldset>
-                         <input type="text" name="name" placeholder="Job Name"  value="<?php echo $name; ?>" autocomplete="on" required>
-                       </fieldset>
-                       <fieldset>
-                         <input type="text" name="description" placeholder="Description"  value="<?php echo $description; ?>" required>
-                       </fieldset>
-                       <fieldset>
-                         <input type="file" name="category" placeholder="Category" value="<?php echo $category; ?>" required>
-                       </fieldset>
-                       <fieldset>
-                         <input type="text" name="company" placeholder="Company"  value="<?php echo $company; ?>"  autocomplete="off">
-                       </fieldset>
-                     </div>
-                     <div class="col-lg-6">
-                       <fieldset>
-                         <input name="updateid" value = "<?php echo $id; ?>" style = "display: none; " />
-                       </fieldset>
-                     </div>
-                     <div class="col-lg-12">
-                       <fieldset>
-                         <!-- <button type="reset" name="insert" class="main-button ">Reset</button> -->
-                         <button type="submit" name="update" class="main-button ">Update</button>
-                       </fieldset>
-                     </div>
-                   </div>
+                 <div class="col-lg-6">
+                   <fieldset>
+                     <input name="updateid" value = "<?php echo $id; ?>" style = "display: none; " />
+                   </fieldset>
                  </div>
-               </div>
-               <div class="col-lg-4 align-self-center">
-                 <div >
-                   <img src="assets/images/services-image.jpg" alt="">
+                 <div class="col-lg-12">
+                   <fieldset>
+                     <!-- <button type="reset" name="insert" class="main-button ">Reset</button> -->
+                     <button type="submit" name="update" class="main-button ">Update</button>
+                   </fieldset>
                  </div>
                </div>
              </div>
-           </form>
+           </div>
+           <div class="col-lg-4 align-self-center">
+             <div >
+               <img src="assets/images/services-image.jpg" alt="">
+             </div>
+           </div>
          </div>
-       </div>
+       </form>
      </div>
    </div>
+ </div>
+</div>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
- </body>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
 </html>
