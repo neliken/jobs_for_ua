@@ -18,19 +18,71 @@ exit;
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css" media="all" type="text/css">
 <title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Additional CSS Files -->
+<link rel="stylesheet" href="assets/css/fontawesome.css">
+<link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
+<link rel="stylesheet" href="assets/css/animated.css">
+<link rel="stylesheet" href="assets/css/owl.css">
+
 </head>
-<div class="navbar">
-  <a class="active" href="home.php"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="show_jobs.php"><i>Show Jobs</i></a>
-  <a href="show_jobs.php"><i>Add a job</i></a>
-  <a href="logout.php" style="float:right"><i class="fa fa-fw fa-user"></i>Logout</a>
+<body> <!-- ***** Preloader Start ***** -->
+<div id="js-preloader" class="js-preloader">
+<div class="preloader-inner">
+<span class="dot"></span>
+<div class="dots">
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
-<body>
+</div>
+</div>
+<!-- ***** Preloader End ***** -->
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+<div class="container">
+<div class="row">
+  <div class="col-12">
+    <nav class="main-nav">
+      <!-- ***** Logo Start ***** -->
+      <a href="home.php" class="logo">
+        <img src="assets/images/logo12.png" alt="">
+      </a>
+      <!-- ***** Logo End ***** -->
+      <!-- ***** Menu Start ***** -->
+      <ul class="nav">
+        <li class="scroll-to-section"><a href="home.php" class="active">Home</a></li>
+        <li class="scroll-to-section"><a href="show_jobs.php">Show Jobs</a></li>
+        <li class="scroll-to-section"><a href="add_job.php">Add a Job</a></li>
+        <li class="scroll-to-section"><div class="border-first-button"><a href="logout.php">Logout</a></div></li>
+      </ul>
+      <a class='menu-trigger'>
+          <span>Menu</span>
+      </a>
+      <!-- ***** Menu End ***** -->
+    </nav>
+  </div>
+</div>
+</div>
+</header>
+<br> <br> <br> <br> <br>
 <div class="container">
 <h1>Hello, <?php echo $userData['username'];?></h1>
 </div>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 </html>
