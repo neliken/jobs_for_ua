@@ -80,7 +80,7 @@ if(isset($_POST['insert']))
       <!-- ***** Menu Start ***** -->
       <ul class="nav">
         <li class="scroll-to-section"><a href="home.php" class="active">Home</a></li>
-        <li class="scroll-to-section"><a href="show_jobs.php">Show Jobs</a></li>
+        <li class="scroll-to-section"><a href="show_jobs_admin.php">Show Jobs</a></li>
         <li class="scroll-to-section"><a href="add_job.php">Add a Job</a></li>
         <li class="scroll-to-section"><div class="border-first-button"><a href="logout.php">Logout</a></div></li>
       </ul>

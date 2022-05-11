@@ -48,19 +48,17 @@ exit;
       <div class="col-12">
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
-          <a href="index1.php" class="logo">
+          <a href="index.php" class="logo">
             <img src="assets/images/logo12.png" alt="">
           </a>
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
-            <li class="scroll-to-section"><a href="index1.php" class="active">Home</a></li>
-            <li class="scroll-to-section"><a href="#about">About</a></li>
-            <li class="scroll-to-section"><a href="#services">Services</a></li>
-            <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
-            <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-            <li class="scroll-to-section"><div class="border-first-button"><a href="index.php">Login</a></div></li>
+            <li class="scroll-to-section"><a href="index.php" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="index.php">About</a></li>
+            <li class="scroll-to-section"><a href="show_jobs.php">Jobs</a></li>
+            <li class="scroll-to-section"><a href="info.php">Contact</a></li>
+            <li class="scroll-to-section"><div class="border-first-button"><a href="login.php">Login</a></div></li>
           </ul>
           <a class='menu-trigger'>
               <span>Menu</span>
