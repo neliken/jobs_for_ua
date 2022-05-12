@@ -103,12 +103,44 @@ if(isset($_GET['deleteid'])){
        <div class="col-lg-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
          <div class="blog-posts">
            <div class="row" id="123">
+
+             <?php
+              $sql="Select * from jobs join users on jobs.id_user=users.user_id where users.user_email='$user_email'";
+              $result = mysqli_query($db_connection, $sql);
+              if($result){
+                while ($row =mysqli_fetch_assoc($result)) {
+                   $id=$row['id_job'];
+                   $name=$row['name'];
+                   $description=$row['description'];
+                   $photo=$row['photo'];
+                   $link_site=$row['link_site'];
+                   $company =$row['company'];
+
+       echo '
+               <div class="col-lg-12">
+                  <div class="post-item">
+                   <div class="right-content">
+                    <div class="thumb">
+                     <a href="'.$link_site.'"><img src="assets/images/'.$photo.'" alt="c"></a>
+                    </div>
+                    <span class="category">'.$name.'</span> <br><br>
+                    <h6><em>'.$company.'</em></h6>
+                    <span>'.$description.'</span> <br> <br>
+                    <span class="col-lg-6"><a href="update_job.php?updateid='.$id.'">Edit</a></span><br>
+                    <span class="col-lg-6"><a  href="show_jobs.php?deleteid='.$id.'">Delete</a> </span>
+                   </div>
+                  </div>
+                </div>
+                ';
+              }
+            }?>
            </div>
          </div>
        </div>
      </div>
    </div>
 </div>
+
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/owl-carousel.js"></script>
@@ -117,61 +149,3 @@ if(isset($_GET['deleteid'])){
 <script src="assets/js/custom.js"></script>
 </body>
 </html>
-
-<script>
-$(document).ready(function(){
-
-load_data();
-
-function load_data(query)
-{
- $.ajax({
-  url:"fetch.php",
-  method:"POST",
-  data:{query:query},
-  dataType:"json",
-  success:function(data)
-  {
-   $('#total_records').text(data.length);
-   var html = '';
-   if(data.length > 0)
-   {
-    for(var count = 0; count < data.length; count++)
-    {
-
-     html += '<div class="col-lg-12">';
-     html += '<div class="post-item">';
-     html += '<div class="right-content">';
-     html += '<div class="thumb">';
-     html += '<a href="#"><img src="assets/images/'+data[count].photo+'" alt="c"></a>';
-     html += '</div>';
-
-     html += '<span class="category">'+data[count].name+'</span> <br><br>';
-     html += '<h6><em>'+data[count].company+'</em></h6> ';
-     // html += '<span>'+data[count].category+'</span> <br>';
-     html += '<span>'+data[count].description+'</span> <br> <br>';
-     html += '<span class="col-lg-6"><a href="update_job.php?updateid='+data[count].id_job+'">Edit</a></span><br>';
-     html += '<span class="col-lg-6"><a  href="show_jobs.php?deleteid='+data[count].id_job+'">Delete</a> </span>';
-
-     html += '   </div>';
-     html += '   </div>';
-     html += '   </div>';
-
-    }
-   }
-   else
-   {
-    html = '<tr><td colspan="5">No Data Found</td></tr>';
-   }
-   $('#123').html(html);
-  }
- })
-}
-
-$('#search').click(function(){
- var query = $('#tags').val();
- load_data(query);
-});
-
-});
-</script>

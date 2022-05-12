@@ -25,7 +25,7 @@ if(isset($_POST['insert']))
 
           if(mysqli_query($db_connection,$sql_insert))
         {
-            header('location:show_jobs.php');
+            header('location:show_jobs_admin.php');
         }else{
             die(mysqli_error($db_connection));
         }
@@ -118,7 +118,7 @@ if(isset($_POST['insert']))
                       <input type="text" name="description" placeholder="Description" required>
                     </fieldset>
                     <fieldset>
-                      <input type="file" name="category" placeholder="Category" required>
+                      <input type="file" name="category" required>
                     </fieldset>
                     <fieldset>
                       <input type="text" name="company" placeholder="Company" autocomplete="off">

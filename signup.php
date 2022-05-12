@@ -86,14 +86,6 @@ exit;
                   <div class="row">
                     <div class="col-lg-12">
                       <h4>Create an account</h4>
-                      <?php
-                      if(isset($success_message)){
-                      echo '<div class="success_message">'.$success_message.'</div>';
-                      }
-                      if(isset($error_message)){
-                      echo '<div class="error_message">'.$error_message.'</div>';
-                      }
-                      ?>
                       <fieldset>
                         <input type="text" name="username" id="username" placeholder="Name Surname" autocomplete="on" required>
                       </fieldset>
@@ -108,7 +100,15 @@ exit;
                       <!-- <fieldset>
                         <button type="reset" id="form-submit" class="main-button ">Reset</button>
                       </fieldset> -->
-                      <fieldset>
+                      <fieldset> <br> <br>
+                        <?php
+                        if(isset($success_message)){
+                        echo '<div class="alert alert-success">'.$success_message.'</div>';
+                        }
+                        if(isset($error_message)){
+                        echo '<div class="alert alert-danger">'.$error_message.'</div>';
+                        }
+                        ?>
                         <button type="submit" id="form-submit" class="main-button ">Sign Up</button>
                       </fieldset> <br>
                         <p>Already have an account? <a href="index.php">Login here</a>.</p>

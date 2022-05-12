@@ -87,14 +87,6 @@ exit;
                   <div class="row">
                     <div class="col-lg-12">
                       <h4>Login</h4>
-                      <?php
-                      if(isset($success_message)){
-                      echo '<div class="success_message">'.$success_message.'</div>';
-                      }
-                      if(isset($error_message)){
-                      echo '<div class="error_message">'.$error_message.'</div>';
-                      }
-                      ?>
                       <fieldset>
                         <input type="email" name="user_email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
                       </fieldset>
@@ -106,7 +98,15 @@ exit;
                       <!-- <fieldset>
                         <button type="reset" id="form-submit" class="main-button ">Reset</button>
                       </fieldset> -->
-                      <fieldset>
+                      <fieldset> <br>
+                        <?php
+                        if(isset($success_message)){
+                        echo '<div class="alert alert-succes">'.$success_message.'</div>';
+                        }
+                        if(isset($error_message)){
+                        echo '<div class="alert alert-danger">'.$error_message.'</div>';
+                        }
+                        ?>
                       <a href="home.php"><button type="submit" id="form-submit" class="main-button">Login</button></a>
                       </fieldset>
                       <br>

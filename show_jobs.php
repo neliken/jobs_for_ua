@@ -151,7 +151,7 @@ $(document).ready(function(){
       html += '<div class="post-item">';
       html += '<div class="right-content">';
       html += '<div class="thumb">';
-      html += '<a href="#"><img src="assets/images/'+data[count].photo+'" alt=""></a>';
+      html += '<a href="'+data[count].link_site+'"><img src="assets/images/'+data[count].photo+'" alt=""></a>';
       html += '</div>';
 
       html += '<br><span class="category">'+data[count].name+'</span> <br><br>';
